@@ -1,0 +1,805 @@
+[
+  {
+    "$defs": {
+      "BeddingFacing": {
+        "enum": [
+          "upright",
+          "overturned",
+          "unknown"
+        ],
+        "title": "BeddingFacing",
+        "type": "string"
+      },
+      "FieldSite": {
+        "description": "A site of with associated field observations",
+        "properties": {
+          "id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Id"
+          },
+          "name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Name"
+          },
+          "location": {
+            "$ref": "#/$defs/Location"
+          },
+          "created": {
+            "format": "date-time",
+            "title": "Created",
+            "type": "string"
+          },
+          "updated": {
+            "format": "date-time",
+            "title": "Updated",
+            "type": "string"
+          },
+          "observations": {
+            "default": [],
+            "items": {
+              "$ref": "#/$defs/Observation"
+            },
+            "title": "Observations",
+            "type": "array"
+          },
+          "samples": {
+            "default": [],
+            "items": {
+              "$ref": "#/$defs/Sample"
+            },
+            "title": "Samples",
+            "type": "array"
+          },
+          "photos": {
+            "default": [],
+            "items": {
+              "$ref": "#/$defs/Photo"
+            },
+            "title": "Photos",
+            "type": "array"
+          },
+          "notes": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Notes"
+          },
+          "social": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/SocialInfo"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "children": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/$defs/FieldSite"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Children"
+          },
+          "contributors": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/$defs/Person"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Contributors"
+          }
+        },
+        "required": [
+          "id",
+          "location",
+          "created",
+          "updated"
+        ],
+        "title": "FieldSite",
+        "type": "object"
+      },
+      "GeologicAgeInterval": {
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "integer"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "t_age": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "T Age"
+          },
+          "b_age": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "B Age"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ],
+        "title": "GeologicAgeInterval",
+        "type": "object"
+      },
+      "LinearOrientation": {
+        "properties": {
+          "plunge": {
+            "title": "Plunge",
+            "type": "number"
+          },
+          "trend": {
+            "title": "Trend",
+            "type": "number"
+          },
+          "notes": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Notes"
+          }
+        },
+        "required": [
+          "plunge",
+          "trend"
+        ],
+        "title": "LinearOrientation",
+        "type": "object"
+      },
+      "LithodemeName": {
+        "description": "A lithodeme or stratigraphic unit name  ",
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "integer"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "t_age": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "T Age"
+          },
+          "b_age": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "B Age"
+          },
+          "parent": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Parent"
+          },
+          "type": {
+            "$ref": "#/$defs/LithodemeType"
+          },
+          "t_interval": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "T Interval"
+          },
+          "b_interval": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "B Interval"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "type"
+        ],
+        "title": "LithodemeName",
+        "type": "object"
+      },
+      "LithodemeType": {
+        "enum": [
+          "formation",
+          "member",
+          "group",
+          "supergroup",
+          "batholith",
+          "pluton",
+          "bed",
+          "flow",
+          "terrace",
+          "intrusion"
+        ],
+        "title": "LithodemeType",
+        "type": "string"
+      },
+      "Lithology": {
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "integer"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "parents": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Parents"
+          },
+          "color": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Color"
+          },
+          "pattern": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Pattern"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ],
+        "title": "Lithology",
+        "type": "object"
+      },
+      "Location": {
+        "description": "Location model representing a geographical location with latitude and longitude.",
+        "properties": {
+          "latitude": {
+            "title": "Latitude",
+            "type": "number"
+          },
+          "longitude": {
+            "title": "Longitude",
+            "type": "number"
+          },
+          "elevation": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Elevation"
+          },
+          "radius": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Radius"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Description"
+          },
+          "closest_place": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Closest Place"
+          },
+          "gps_accuracy": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Gps Accuracy"
+          }
+        },
+        "required": [
+          "latitude",
+          "longitude"
+        ],
+        "title": "Location",
+        "type": "object"
+      },
+      "Observation": {
+        "properties": {
+          "notes": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Notes"
+          },
+          "data": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/PlanarOrientation"
+              },
+              {
+                "$ref": "#/$defs/LinearOrientation"
+              },
+              {
+                "$ref": "#/$defs/Photo"
+              },
+              {
+                "$ref": "#/$defs/RockUnit"
+              },
+              {
+                "$ref": "#/$defs/Texture"
+              },
+              {
+                "$ref": "#/$defs/Lithology"
+              }
+            ],
+            "title": "Data"
+          }
+        },
+        "required": [
+          "data"
+        ],
+        "title": "Observation",
+        "type": "object"
+      },
+      "Person": {
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "integer"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "email": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Email"
+          },
+          "orcid": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Orcid"
+          },
+          "institution": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Institution"
+          },
+          "gravatar": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Gravatar"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ],
+        "title": "Person",
+        "type": "object"
+      },
+      "Photo": {
+        "description": "A photo.",
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "integer"
+          },
+          "url": {
+            "title": "Url",
+            "type": "string"
+          },
+          "width": {
+            "title": "Width",
+            "type": "integer"
+          },
+          "height": {
+            "title": "Height",
+            "type": "integer"
+          },
+          "checksum": {
+            "title": "Checksum",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "url",
+          "width",
+          "height",
+          "checksum"
+        ],
+        "title": "Photo",
+        "type": "object"
+      },
+      "PlanarOrientation": {
+        "properties": {
+          "strike": {
+            "title": "Strike",
+            "type": "number"
+          },
+          "dip": {
+            "title": "Dip",
+            "type": "number"
+          },
+          "facing": {
+            "$ref": "#/$defs/BeddingFacing",
+            "default": "upright"
+          },
+          "notes": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Notes"
+          },
+          "associated": {
+            "default": [],
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/PlanarOrientation"
+                },
+                {
+                  "$ref": "#/$defs/LinearOrientation"
+                }
+              ]
+            },
+            "title": "Associated",
+            "type": "array"
+          }
+        },
+        "required": [
+          "strike",
+          "dip"
+        ],
+        "title": "PlanarOrientation",
+        "type": "object"
+      },
+      "RockUnit": {
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "integer"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "abbreviation": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Abbreviation"
+          },
+          "liths": {
+            "default": [],
+            "items": {
+              "$ref": "#/$defs/Lithology"
+            },
+            "title": "Liths",
+            "type": "array"
+          },
+          "age": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/GeologicAgeInterval"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "entity": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/LithodemeName"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ],
+        "title": "RockUnit",
+        "type": "object"
+      },
+      "Sample": {
+        "description": "A sample of a rock or sediment",
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "integer"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Description"
+          },
+          "sample_type": {
+            "enum": [
+              "rock",
+              "sediment",
+              "soil",
+              "water"
+            ],
+            "title": "Sample Type",
+            "type": "string"
+          },
+          "igsn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Igsn"
+          },
+          "collected": {
+            "format": "date-time",
+            "title": "Collected",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "sample_type",
+          "collected"
+        ],
+        "title": "Sample",
+        "type": "object"
+      },
+      "SocialInfo": {
+        "properties": {
+          "likes": {
+            "title": "Likes",
+            "type": "integer"
+          },
+          "comments": {
+            "title": "Comments",
+            "type": "integer"
+          },
+          "rating": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Rating"
+          }
+        },
+        "required": [
+          "likes",
+          "comments"
+        ],
+        "title": "SocialInfo",
+        "type": "object"
+      },
+      "Texture": {
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "title": "Texture",
+        "type": "object"
+      }
+    },
+    "$ref": "#/$defs/FieldSite"
+  }
+]

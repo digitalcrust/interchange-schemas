@@ -1,0 +1,24 @@
+[project]
+name = "field_site_schemas"
+version = "0.1.0"
+description = "A shared schema for field sites"
+authors = [
+    {name = "Daven Quinn",email = "code@davenquinn.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic (>=2.11.3,<3.0.0)",
+    "erdantic (>=1.1.0.post1,<2.0.0)",
+    "geojson-pydantic (>=1.2.0,<2.0.0)"
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

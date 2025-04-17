@@ -1,0 +1,2894 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.873215,
+                    39.71247
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T17:54:23.000Z",
+                "altitude": 1831.7,
+                "gps_accuracy": 10,
+                "name": "Gentile Wash",
+                "time": "2019-09-26T17:54:23.000Z",
+                "id": 15695204636394,
+                "modified_timestamp": 1569520474505,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695204636394",
+                "tags": [
+                    {
+                        "map_unit_name": "Blackhawk",
+                        "member_name": "Spring Canyon",
+                        "rock_type": "sedimentary",
+                        "eon": [
+                            "phanerozoic"
+                        ],
+                        "era_phanerozoic": [
+                            "mesozoic"
+                        ],
+                        "period_mesozoic": [
+                            "cretaceous"
+                        ],
+                        "age_cretaceous": [
+                            "campanian"
+                        ],
+                        "id": "15695207504174",
+                        "type": "geologic_unit",
+                        "name": "Kbsc",
+                        "unit_label_abbreviation": "Kbsc"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.876392,
+                    39.71634
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T19:08:58.000Z",
+                "altitude": 1883.69,
+                "sed": {
+                    "lithologies": {
+                        "thickness_units": "cm",
+                        "is_this_a_bed_or_package": "bed",
+                        "primary_lithology": "siliciclastic",
+                        "interval_thickness": 15,
+                        "principal_siliciclastic_type": "sandstone",
+                        "sand_principal_grain_size": "sand_fine_low",
+                        "grain_size": [
+                            "sand_fine_low"
+                        ],
+                        "interbed_thickness": "_2_cm",
+                        "stratification": [
+                            "strat_bedding",
+                            "strat_laminae"
+                        ],
+                        "bedding_thickness": [
+                            "thick"
+                        ],
+                        "laminae_thickness_i_select_more_than_one": [
+                            "v_thin"
+                        ]
+                    },
+                    "structures": {
+                        "bioturbation": "yes",
+                        "descriptive": [
+                            "u_shaped"
+                        ],
+                        "ichnofacies": "nereites"
+                    }
+                },
+                "gps_accuracy": 10,
+                "name": "Gentile wash 2",
+                "time": "2019-09-26T19:08:58.000Z",
+                "id": 15695249383549,
+                "modified_timestamp": 1569526524709,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695249383549",
+                "tags": [
+                    {
+                        "unit_label_abbreviation": "*sb",
+                        "id": "15695253681773",
+                        "type": "geologic_unit",
+                        "name": "*sb",
+                        "map_unit_name": "Blackhawk",
+                        "member_name": "Sow belly parasequence"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.876527,
+                    39.716753
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T19:45:10.000Z",
+                "altitude": 1942.87,
+                "sed": {
+                    "strat_section": {
+                        "strat_section_id": 15695271820632,
+                        "column_profile": "clastic",
+                        "column_y_axis_units": "m",
+                        "section_well_name": "Gentile wasb",
+                        "display_lithology_patterns": true,
+                        "section_type": "outcrop",
+                        "location_locality": "Gentile Wash",
+                        "purpose": [
+                            "facies_arch",
+                            "pleasure"
+                        ],
+                        "scale_of_interest": [
+                            "local_section"
+                        ],
+                        "obs_interval_bed_obs_scale": "dm",
+                        "how_is_section_georeferenced": "point_at_secti"
+                    }
+                },
+                "gps_accuracy": 10,
+                "name": "Gentile Wash start of section",
+                "time": "2019-09-26T19:45:10.000Z",
+                "id": 15695271108052,
+                "modified_timestamp": 1569527498657,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695271108052",
+                "tags": [
+                    {
+                        "unit_label_abbreviation": "Kb",
+                        "map_unit_name": "Blackhawk",
+                        "id": "15695271715513",
+                        "type": "geologic_unit",
+                        "name": "Kb"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    0
+                                ],
+                                [
+                                    0,
+                                    8
+                                ],
+                                [
+                                    20,
+                                    8
+                                ],
+                                [
+                                    20,
+                                    0
+                                ],
+                                [
+                                    0,
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    8
+                                ],
+                                [
+                                    0,
+                                    12
+                                ],
+                                [
+                                    40,
+                                    12
+                                ],
+                                [
+                                    40,
+                                    8
+                                ],
+                                [
+                                    0,
+                                    8
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    12
+                                ],
+                                [
+                                    0,
+                                    16
+                                ],
+                                [
+                                    20,
+                                    16
+                                ],
+                                [
+                                    20,
+                                    12
+                                ],
+                                [
+                                    0,
+                                    12
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    16
+                                ],
+                                [
+                                    0,
+                                    20
+                                ],
+                                [
+                                    40,
+                                    20
+                                ],
+                                [
+                                    40,
+                                    16
+                                ],
+                                [
+                                    0,
+                                    16
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    20
+                                ],
+                                [
+                                    0,
+                                    24
+                                ],
+                                [
+                                    20,
+                                    24
+                                ],
+                                [
+                                    20,
+                                    20
+                                ],
+                                [
+                                    0,
+                                    20
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    24
+                                ],
+                                [
+                                    0,
+                                    28
+                                ],
+                                [
+                                    40,
+                                    28
+                                ],
+                                [
+                                    40,
+                                    24
+                                ],
+                                [
+                                    0,
+                                    24
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    28
+                                ],
+                                [
+                                    0,
+                                    30
+                                ],
+                                [
+                                    20,
+                                    30
+                                ],
+                                [
+                                    20,
+                                    28
+                                ],
+                                [
+                                    0,
+                                    28
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    30
+                                ],
+                                [
+                                    0,
+                                    30
+                                ],
+                                [
+                                    40,
+                                    30
+                                ],
+                                [
+                                    40,
+                                    30
+                                ],
+                                [
+                                    0,
+                                    30
+                                ]
+                            ]
+                        ]
+                    }
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T19:58:50.000Z",
+                "altitude": 1940.7,
+                "lng": -110.876364,
+                "strat_section_id": 15695271820632,
+                "surface_feature": {
+                    "surface_feature_type": "strat_interval"
+                },
+                "modified_timestamp": 1569527930768,
+                "sed": {
+                    "lithologies": {
+                        "is_this_a_bed_or_package": "interbedded",
+                        "primary_lithology": "siliciclastic",
+                        "thickness_units": "m",
+                        "interval_thickness": 1.5,
+                        "principal_siliciclastic_type": "mudstone",
+                        "mud_silt_principal_grain_size": "silt",
+                        "interbed_lithology": "siliciclastic",
+                        "interbed_siliciclastic_type": "sandstone",
+                        "sand_interbed_grain_size": "sand_fine_low",
+                        "interbed_proportion": 30,
+                        "primary_lithology_thickness": "10_30_cm",
+                        "interbed_thickness": "10_30_cm"
+                    }
+                },
+                "name": "Gentile Wash",
+                "time": "2019-09-26T19:58:50.000Z",
+                "id": 15695279306764,
+                "lat": 39.716731,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695279306764"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    30
+                                ],
+                                [
+                                    0,
+                                    38
+                                ],
+                                [
+                                    50,
+                                    38
+                                ],
+                                [
+                                    50,
+                                    30
+                                ],
+                                [
+                                    0,
+                                    30
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    38
+                                ],
+                                [
+                                    0,
+                                    42
+                                ],
+                                [
+                                    20,
+                                    42
+                                ],
+                                [
+                                    20,
+                                    38
+                                ],
+                                [
+                                    0,
+                                    38
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    42
+                                ],
+                                [
+                                    0,
+                                    46
+                                ],
+                                [
+                                    50,
+                                    46
+                                ],
+                                [
+                                    50,
+                                    42
+                                ],
+                                [
+                                    0,
+                                    42
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    46
+                                ],
+                                [
+                                    0,
+                                    50
+                                ],
+                                [
+                                    20,
+                                    50
+                                ],
+                                [
+                                    20,
+                                    46
+                                ],
+                                [
+                                    0,
+                                    46
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    50
+                                ],
+                                [
+                                    0,
+                                    50
+                                ],
+                                [
+                                    50,
+                                    50
+                                ],
+                                [
+                                    50,
+                                    50
+                                ],
+                                [
+                                    0,
+                                    50
+                                ]
+                            ]
+                        ]
+                    }
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T20:06:49.000Z",
+                "altitude": 1934.11,
+                "lng": -110.876382,
+                "strat_section_id": 15695271820632,
+                "surface_feature": {
+                    "surface_feature_type": "strat_interval"
+                },
+                "modified_timestamp": 1569528961939,
+                "sed": {
+                    "lithologies": {
+                        "is_this_a_bed_or_package": "interbedded",
+                        "primary_lithology": "siliciclastic",
+                        "thickness_units": "m",
+                        "interval_thickness": 1,
+                        "principal_siliciclastic_type": "sandstone",
+                        "sand_principal_grain_size": "sand_fine_upp",
+                        "interbed_lithology": "siliciclastic",
+                        "interbed_siliciclastic_type": "mudstone",
+                        "mud_silt_interbed_grain_size": "silt",
+                        "interbed_proportion": 30,
+                        "interbed_thickness": "10_30_cm",
+                        "primary_lithology_thickness": "10_30_cm",
+                        "interbed_proportion_change": "no_change",
+                        "sandstone_prin_struct": "hummocky"
+                    }
+                },
+                "name": "Gentile Wash",
+                "time": "2019-09-26T20:06:49.000Z",
+                "id": 15695284090669,
+                "lat": 39.716711,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695284090669"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            0,
+                            50
+                        ],
+                        [
+                            0,
+                            56
+                        ],
+                        [
+                            50,
+                            56
+                        ],
+                        [
+                            50,
+                            50
+                        ],
+                        [
+                            0,
+                            50
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T20:18:39.000Z",
+                "altitude": 1945.65,
+                "lng": -110.876386,
+                "strat_section_id": 15695271820632,
+                "surface_feature": {
+                    "surface_feature_type": "strat_interval"
+                },
+                "modified_timestamp": 1569529224913,
+                "sed": {
+                    "lithologies": {
+                        "is_this_a_bed_or_package": "bed",
+                        "primary_lithology": "siliciclastic",
+                        "thickness_units": "m",
+                        "principal_siliciclastic_type": "sandstone",
+                        "sand_principal_grain_size": "sand_fine_upp",
+                        "interval_thickness": 0.3,
+                        "sandstone_prin_struct": "hummocky"
+                    },
+                    "structures": {
+                        "sandstone_structures": true,
+                        "sandstone_prin_struct": "hummocky"
+                    }
+                },
+                "name": "Gentile Wash",
+                "time": "2019-09-26T20:18:39.000Z",
+                "id": 15695291195946,
+                "lat": 39.716848,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695291195946"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "images": [
+                    {
+                        "width": 3264,
+                        "id": 15695296338275,
+                        "height": 2448,
+                        "image_type": "photo",
+                        "annotated": false,
+                        "self": "https:\/\/strabospot.org\/db\/image\/15695296338275"
+                    }
+                ],
+                "date": "2019-09-26T20:26:47.000Z",
+                "altitude": 1938.31,
+                "lng": -110.876384,
+                "strat_section_id": 15695271820632,
+                "surface_feature": {
+                    "surface_feature_type": "strat_interval"
+                },
+                "modified_timestamp": 1569529955629,
+                "sed": {
+                    "lithologies": {
+                        "is_this_a_bed_or_package": "package_succe",
+                        "primary_lithology": "siliciclastic",
+                        "thickness_units": "m",
+                        "interval_thickness": 1.5,
+                        "principal_siliciclastic_type": "sandstone",
+                        "sand_principal_grain_size": "sand_fine_upp"
+                    },
+                    "structures": {
+                        "sandstone_structures": true,
+                        "addl_sandstone_struct": [
+                            "hummocky"
+                        ]
+                    }
+                },
+                "name": "Gentile Wash",
+                "time": "2019-09-26T20:26:47.000Z",
+                "id": 15695296079151,
+                "lat": 39.716898,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695296079151"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            0,
+                            56
+                        ],
+                        [
+                            0,
+                            86
+                        ],
+                        [
+                            50,
+                            86
+                        ],
+                        [
+                            50,
+                            56
+                        ],
+                        [
+                            0,
+                            56
+                        ]
+                    ]
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "images": [
+                    {
+                        "width": 3264,
+                        "id": 15695301855394,
+                        "height": 2448,
+                        "image_type": "photo",
+                        "annotated": false,
+                        "self": "https:\/\/strabospot.org\/db\/image\/15695301855394"
+                    }
+                ],
+                "date": "2019-09-26T20:34:38.000Z",
+                "altitude": 1962.88,
+                "lng": -110.876392,
+                "strat_section_id": 15695271820632,
+                "surface_feature": {
+                    "surface_feature_type": "strat_interval"
+                },
+                "modified_timestamp": 1569530185847,
+                "sed": {
+                    "lithologies": {
+                        "is_this_a_bed_or_package": "bed",
+                        "primary_lithology": "siliciclastic",
+                        "thickness_units": "m",
+                        "interval_thickness": 0.3,
+                        "principal_siliciclastic_type": "sandstone",
+                        "sand_principal_grain_size": "sand_fine_upp",
+                        "sandstone_prin_struct": "hummocky",
+                        "grain_size": [
+                            "sand_fine_upp"
+                        ]
+                    },
+                    "structures": {
+                        "sandstone_structures": true,
+                        "sandstone_prin_struct": "hummocky",
+                        "addl_sandstone_struct": [
+                            "climbing",
+                            "hummocky"
+                        ]
+                    }
+                },
+                "name": "Gentile Wash",
+                "time": "2019-09-26T20:34:38.000Z",
+                "id": 15695300787396,
+                "lat": 39.716913,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695300787396"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            0,
+                            86
+                        ],
+                        [
+                            0,
+                            92
+                        ],
+                        [
+                            50,
+                            92
+                        ],
+                        [
+                            50,
+                            86
+                        ],
+                        [
+                            0,
+                            86
+                        ]
+                    ]
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            0,
+                            92
+                        ],
+                        [
+                            0,
+                            95
+                        ],
+                        [
+                            20,
+                            95
+                        ],
+                        [
+                            20,
+                            92
+                        ],
+                        [
+                            0,
+                            92
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T20:37:36.000Z",
+                "altitude": 1963.77,
+                "lng": -110.87649,
+                "strat_section_id": 15695271820632,
+                "surface_feature": {
+                    "surface_feature_type": "strat_interval"
+                },
+                "modified_timestamp": 1569530256615,
+                "sed": {
+                    "lithologies": {
+                        "is_this_a_bed_or_package": "bed",
+                        "primary_lithology": "siliciclastic",
+                        "thickness_units": "m",
+                        "interval_thickness": 0.15,
+                        "principal_siliciclastic_type": "mudstone",
+                        "mud_silt_principal_grain_size": "silt"
+                    }
+                },
+                "name": "Gentile Wash",
+                "time": "2019-09-26T20:37:36.000Z",
+                "id": 15695302565006,
+                "lat": 39.716943,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695302565006"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    95
+                                ],
+                                [
+                                    0,
+                                    119
+                                ],
+                                [
+                                    50,
+                                    119
+                                ],
+                                [
+                                    50,
+                                    95
+                                ],
+                                [
+                                    0,
+                                    95
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    119
+                                ],
+                                [
+                                    0,
+                                    120.5
+                                ],
+                                [
+                                    20,
+                                    120.5
+                                ],
+                                [
+                                    20,
+                                    119
+                                ],
+                                [
+                                    0,
+                                    119
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    120.5
+                                ],
+                                [
+                                    0,
+                                    136.5
+                                ],
+                                [
+                                    50,
+                                    136.5
+                                ],
+                                [
+                                    50,
+                                    120.5
+                                ],
+                                [
+                                    0,
+                                    120.5
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    136.5
+                                ],
+                                [
+                                    0,
+                                    138
+                                ],
+                                [
+                                    20,
+                                    138
+                                ],
+                                [
+                                    20,
+                                    136.5
+                                ],
+                                [
+                                    0,
+                                    136.5
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    138
+                                ],
+                                [
+                                    0,
+                                    154
+                                ],
+                                [
+                                    50,
+                                    154
+                                ],
+                                [
+                                    50,
+                                    138
+                                ],
+                                [
+                                    0,
+                                    138
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    154
+                                ],
+                                [
+                                    0,
+                                    155.5
+                                ],
+                                [
+                                    20,
+                                    155.5
+                                ],
+                                [
+                                    20,
+                                    154
+                                ],
+                                [
+                                    0,
+                                    154
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    155.5
+                                ],
+                                [
+                                    0,
+                                    171.5
+                                ],
+                                [
+                                    50,
+                                    171.5
+                                ],
+                                [
+                                    50,
+                                    155.5
+                                ],
+                                [
+                                    0,
+                                    155.5
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    171.5
+                                ],
+                                [
+                                    0,
+                                    173
+                                ],
+                                [
+                                    20,
+                                    173
+                                ],
+                                [
+                                    20,
+                                    171.5
+                                ],
+                                [
+                                    0,
+                                    171.5
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    173
+                                ],
+                                [
+                                    0,
+                                    189
+                                ],
+                                [
+                                    50,
+                                    189
+                                ],
+                                [
+                                    50,
+                                    173
+                                ],
+                                [
+                                    0,
+                                    173
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    0,
+                                    189
+                                ],
+                                [
+                                    0,
+                                    190.5
+                                ],
+                                [
+                                    20,
+                                    190.5
+                                ],
+                                [
+                                    20,
+                                    189
+                                ],
+                                [
+                                    0,
+                                    189
+                                ]
+                            ]
+                        ]
+                    }
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T20:42:44.000Z",
+                "altitude": 1940.08,
+                "lng": -110.87649,
+                "strat_section_id": 15695271820632,
+                "surface_feature": {
+                    "surface_feature_type": "strat_interval"
+                },
+                "modified_timestamp": 1569530826668,
+                "sed": {
+                    "lithologies": {
+                        "is_this_a_bed_or_package": "interbedded",
+                        "primary_lithology": "siliciclastic",
+                        "thickness_units": "m",
+                        "interval_thickness": 5,
+                        "principal_siliciclastic_type": "sandstone",
+                        "sand_principal_grain_size": "sand_fine_upp",
+                        "interbed_lithology": "siliciclastic",
+                        "interbed_siliciclastic_type": "mudstone",
+                        "mud_silt_interbed_grain_size": "silt",
+                        "grain_size": [
+                            "silt",
+                            "sand_fine_upp"
+                        ],
+                        "interbed_proportion": 5,
+                        "primary_lithology_thickness": "_30_cm",
+                        "interbed_thickness": "5_10_cm",
+                        "sandstone_prin_struct": "hummocky"
+                    },
+                    "structures": {
+                        "sandstone_structures": true,
+                        "sandstone_prin_struct": "hummocky",
+                        "addl_sandstone_struct": [
+                            "hummocky",
+                            "trough"
+                        ],
+                        "deformation_structures": [
+                            "convolute_bedd",
+                            "ball_and_pillo"
+                        ]
+                    }
+                },
+                "name": "Gentile Wash",
+                "time": "2019-09-26T20:42:44.000Z",
+                "id": 15695305643653,
+                "lat": 39.716937,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695305643653"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            0,
+                            190.5
+                        ],
+                        [
+                            0,
+                            206.5
+                        ],
+                        [
+                            20,
+                            206.5
+                        ],
+                        [
+                            20,
+                            190.5
+                        ],
+                        [
+                            0,
+                            190.5
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T20:53:43.000Z",
+                "altitude": 1953.61,
+                "lng": -110.876464,
+                "strat_section_id": 15695271820632,
+                "surface_feature": {
+                    "surface_feature_type": "strat_interval"
+                },
+                "modified_timestamp": 1569531223336,
+                "sed": {
+                    "lithologies": {
+                        "is_this_a_bed_or_package": "package_succe",
+                        "primary_lithology": "siliciclastic",
+                        "thickness_units": "m",
+                        "interval_thickness": 0.8,
+                        "principal_siliciclastic_type": "siltstone",
+                        "mud_silt_principal_grain_size": "silt"
+                    }
+                },
+                "name": "Gentile Wash 5",
+                "time": "2019-09-26T20:53:43.000Z",
+                "id": 15695312232646,
+                "lat": 39.717064,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695312232646"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            0,
+                            206.5
+                        ],
+                        [
+                            0,
+                            216.5
+                        ],
+                        [
+                            50,
+                            216.5
+                        ],
+                        [
+                            50,
+                            206.5
+                        ],
+                        [
+                            0,
+                            206.5
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T20:55:22.000Z",
+                "altitude": 1935.59,
+                "lng": -110.87685,
+                "strat_section_id": 15695271820632,
+                "surface_feature": {
+                    "surface_feature_type": "strat_interval"
+                },
+                "modified_timestamp": 1569531322259,
+                "sed": {
+                    "lithologies": {
+                        "is_this_a_bed_or_package": "bed",
+                        "primary_lithology": "siliciclastic",
+                        "thickness_units": "m",
+                        "interval_thickness": 0.5,
+                        "principal_siliciclastic_type": "sandstone",
+                        "sand_principal_grain_size": "sand_fine_upp"
+                    }
+                },
+                "name": "Gentile Wash 5",
+                "time": "2019-09-26T20:55:22.000Z",
+                "id": 15695313221632,
+                "lat": 39.717323,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695313221632"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            0,
+                            216.5
+                        ],
+                        [
+                            0,
+                            236.5
+                        ],
+                        [
+                            20,
+                            236.5
+                        ],
+                        [
+                            20,
+                            216.5
+                        ],
+                        [
+                            0,
+                            216.5
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T21:04:50.000Z",
+                "altitude": 1968.38,
+                "lng": -110.876808,
+                "strat_section_id": 15695271820632,
+                "surface_feature": {
+                    "surface_feature_type": "strat_interval"
+                },
+                "modified_timestamp": 1569532333979,
+                "sed": {
+                    "lithologies": {
+                        "is_this_a_bed_or_package": "package_succe",
+                        "primary_lithology": "siliciclastic",
+                        "thickness_units": "m",
+                        "interval_thickness": 1,
+                        "principal_siliciclastic_type": "siltstone",
+                        "mud_silt_principal_grain_size": "silt"
+                    },
+                    "structures": {
+                        "sandstone_structures": true,
+                        "bioturbation": "yes",
+                        "bioturbation_index": "1_sparse_biot"
+                    }
+                },
+                "name": "Gentile Wash 5",
+                "time": "2019-09-26T21:04:50.000Z",
+                "id": 15695318902821,
+                "lat": 39.717366,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695318902821"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            0,
+                            236.5
+                        ],
+                        [
+                            0,
+                            244.5
+                        ],
+                        [
+                            60,
+                            244.5
+                        ],
+                        [
+                            60,
+                            236.5
+                        ],
+                        [
+                            0,
+                            236.5
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T21:09:41.000Z",
+                "altitude": 1945.3,
+                "lng": -110.876562,
+                "strat_section_id": 15695271820632,
+                "surface_feature": {
+                    "surface_feature_type": "strat_interval"
+                },
+                "modified_timestamp": 1569532287096,
+                "sed": {
+                    "lithologies": {
+                        "is_this_a_bed_or_package": "bed",
+                        "primary_lithology": "siliciclastic",
+                        "thickness_units": "m",
+                        "interval_thickness": 0.4,
+                        "principal_siliciclastic_type": "sandstone",
+                        "sand_principal_grain_size": "sand_medium_l"
+                    },
+                    "structures": {
+                        "sandstone_structures": true,
+                        "addl_sandstone_struct": [
+                            "low_angle"
+                        ]
+                    }
+                },
+                "name": "Gentile Wash 5",
+                "time": "2019-09-26T21:09:41.000Z",
+                "id": 15695321816450,
+                "lat": 39.717431,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695321816450"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            0,
+                            244.5
+                        ],
+                        [
+                            0,
+                            276.5
+                        ],
+                        [
+                            20,
+                            276.5
+                        ],
+                        [
+                            20,
+                            244.5
+                        ],
+                        [
+                            0,
+                            244.5
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T21:11:45.000Z",
+                "altitude": 1930.36,
+                "lng": -110.877038,
+                "strat_section_id": 15695271820632,
+                "surface_feature": {
+                    "surface_feature_type": "strat_interval"
+                },
+                "modified_timestamp": 1569532305399,
+                "sed": {
+                    "lithologies": {
+                        "is_this_a_bed_or_package": "bed",
+                        "primary_lithology": "siliciclastic",
+                        "thickness_units": "m",
+                        "interval_thickness": 1.6,
+                        "principal_siliciclastic_type": "siltstone",
+                        "mud_silt_principal_grain_size": "silt"
+                    }
+                },
+                "name": "Gentile Wash 5",
+                "time": "2019-09-26T21:11:45.000Z",
+                "id": 15695323050052,
+                "lat": 39.71738,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695323050052"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            0,
+                            276.5
+                        ],
+                        [
+                            0,
+                            300.5
+                        ],
+                        [
+                            60,
+                            300.5
+                        ],
+                        [
+                            60,
+                            276.5
+                        ],
+                        [
+                            0,
+                            276.5
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T21:14:20.000Z",
+                "altitude": 1920.42,
+                "lng": -110.876944,
+                "strat_section_id": 15695271820632,
+                "surface_feature": {
+                    "surface_feature_type": "strat_interval"
+                },
+                "modified_timestamp": 1569532515892,
+                "sed": {
+                    "lithologies": {
+                        "is_this_a_bed_or_package": "bed",
+                        "primary_lithology": "siliciclastic",
+                        "thickness_units": "m",
+                        "interval_thickness": 1.2,
+                        "principal_siliciclastic_type": "sandstone",
+                        "sand_principal_grain_size": "sand_medium_l"
+                    },
+                    "structures": {
+                        "sandstone_structures": true,
+                        "addl_sandstone_struct": [
+                            "trough",
+                            "lenticular"
+                        ]
+                    }
+                },
+                "name": "Gentile Wash 5",
+                "time": "2019-09-26T21:14:20.000Z",
+                "id": 15695324604883,
+                "lat": 39.71749,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695324604883"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            0,
+                            300.5
+                        ],
+                        [
+                            0,
+                            340.5
+                        ],
+                        [
+                            40,
+                            340.5
+                        ],
+                        [
+                            40,
+                            300.5
+                        ],
+                        [
+                            0,
+                            300.5
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T21:24:45.000Z",
+                "altitude": 1956.15,
+                "lng": -110.876914,
+                "strat_section_id": 15695271820632,
+                "surface_feature": {
+                    "surface_feature_type": "strat_interval"
+                },
+                "modified_timestamp": 1569533085538,
+                "sed": {
+                    "lithologies": {
+                        "is_this_a_bed_or_package": "bed",
+                        "primary_lithology": "siliciclastic",
+                        "thickness_units": "m",
+                        "interval_thickness": 2,
+                        "principal_siliciclastic_type": "sandstone",
+                        "sand_principal_grain_size": "sand_fine_low"
+                    }
+                },
+                "name": "Gentile Wash 5",
+                "time": "2019-09-26T21:24:45.000Z",
+                "id": 15695330854406,
+                "lat": 39.717357,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695330854406"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            0,
+                            340.5
+                        ],
+                        [
+                            0,
+                            420.5
+                        ],
+                        [
+                            60,
+                            420.5
+                        ],
+                        [
+                            60,
+                            340.5
+                        ],
+                        [
+                            0,
+                            340.5
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T21:31:22.000Z",
+                "altitude": 1955.36,
+                "lng": -110.876865,
+                "strat_section_id": 15695271820632,
+                "surface_feature": {
+                    "surface_feature_type": "strat_interval"
+                },
+                "modified_timestamp": 1569533482226,
+                "sed": {
+                    "lithologies": {
+                        "is_this_a_bed_or_package": "package_succe",
+                        "primary_lithology": "siliciclastic",
+                        "thickness_units": "m",
+                        "principal_siliciclastic_type": "sandstone",
+                        "sand_principal_grain_size": "sand_medium_l",
+                        "interval_thickness": 4
+                    }
+                },
+                "name": "Gentile Wash 5",
+                "time": "2019-09-26T21:31:22.000Z",
+                "id": 15695334820897,
+                "lat": 39.717593,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695334820897"
+            },
+            "type": "Feature"
+        },
+        {
+            "properties": {
+                "images": [
+                    {
+                        "width": 3264,
+                        "id": 15695388030770,
+                        "title": "View east",
+                        "image_type": "photo",
+                        "annotated": true,
+                        "height": 2448,
+                        "self": "https:\/\/strabospot.org\/db\/image\/15695388030770"
+                    }
+                ],
+                "date": "2019-09-26T22:59:01.000Z",
+                "altitude": 1849.31,
+                "gps_accuracy": 5,
+                "name": "Gentile Wash 5",
+                "time": "2019-09-26T22:59:01.000Z",
+                "id": 15695387410394,
+                "modified_timestamp": 1569538824497,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695387410394",
+                "tags": [
+                    {
+                        "unit_label_abbreviation": "Kb",
+                        "map_unit_name": "Blackhawk",
+                        "id": "15695271715513",
+                        "type": "geologic_unit",
+                        "name": "Kb"
+                    }
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.869252,
+                    39.712107
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        334.6875,
+                        1619.25
+                    ],
+                    [
+                        360.1875,
+                        1625.625
+                    ],
+                    [
+                        366.5625,
+                        1625.625
+                    ],
+                    [
+                        379.3125,
+                        1628.8125
+                    ],
+                    [
+                        395.25,
+                        1632
+                    ],
+                    [
+                        414.375,
+                        1635.1875
+                    ],
+                    [
+                        433.5,
+                        1638.375
+                    ],
+                    [
+                        449.4375,
+                        1641.5625
+                    ],
+                    [
+                        468.5625,
+                        1641.5625
+                    ],
+                    [
+                        487.6875,
+                        1641.5625
+                    ],
+                    [
+                        506.8125,
+                        1641.5625
+                    ],
+                    [
+                        532.3125,
+                        1641.5625
+                    ],
+                    [
+                        561,
+                        1638.375
+                    ],
+                    [
+                        586.5,
+                        1635.1875
+                    ],
+                    [
+                        608.8125,
+                        1635.1875
+                    ],
+                    [
+                        627.9375,
+                        1635.1875
+                    ],
+                    [
+                        647.0625,
+                        1635.1875
+                    ],
+                    [
+                        666.1875,
+                        1635.1875
+                    ],
+                    [
+                        685.3125,
+                        1635.1875
+                    ],
+                    [
+                        704.4375,
+                        1638.375
+                    ],
+                    [
+                        717.1875,
+                        1638.375
+                    ],
+                    [
+                        729.9375,
+                        1641.5625
+                    ],
+                    [
+                        739.5,
+                        1644.75
+                    ],
+                    [
+                        752.25,
+                        1647.9375
+                    ],
+                    [
+                        765,
+                        1651.125
+                    ],
+                    [
+                        780.9375,
+                        1654.3125
+                    ],
+                    [
+                        793.6875,
+                        1657.5
+                    ],
+                    [
+                        803.25,
+                        1660.6875
+                    ],
+                    [
+                        812.8125,
+                        1660.6875
+                    ],
+                    [
+                        819.1875,
+                        1660.6875
+                    ],
+                    [
+                        828.75,
+                        1663.875
+                    ],
+                    [
+                        835.125,
+                        1663.875
+                    ],
+                    [
+                        844.6875,
+                        1663.875
+                    ],
+                    [
+                        854.25,
+                        1663.875
+                    ],
+                    [
+                        863.8125,
+                        1667.0625
+                    ],
+                    [
+                        876.5625,
+                        1667.0625
+                    ],
+                    [
+                        886.125,
+                        1667.0625
+                    ],
+                    [
+                        895.6875,
+                        1667.0625
+                    ],
+                    [
+                        902.0625,
+                        1670.25
+                    ],
+                    [
+                        908.4375,
+                        1670.25
+                    ],
+                    [
+                        918,
+                        1670.25
+                    ],
+                    [
+                        921.1875,
+                        1670.25
+                    ],
+                    [
+                        927.5625,
+                        1673.4375
+                    ],
+                    [
+                        933.9375,
+                        1673.4375
+                    ],
+                    [
+                        943.5,
+                        1673.4375
+                    ],
+                    [
+                        959.4375,
+                        1673.4375
+                    ]
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T23:01:41.000Z",
+                "lng": -110.869252,
+                "image_basemap": 15695388030770,
+                "name": "Gentile Wash 5",
+                "time": "2019-09-26T23:01:41.000Z",
+                "id": 15695389017403,
+                "lat": 39.712107,
+                "modified_timestamp": 1569538901743,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695389017403"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        274.125,
+                        1396.125
+                    ],
+                    [
+                        306,
+                        1396.125
+                    ],
+                    [
+                        315.5625,
+                        1396.125
+                    ],
+                    [
+                        328.3125,
+                        1396.125
+                    ],
+                    [
+                        344.25,
+                        1396.125
+                    ],
+                    [
+                        360.1875,
+                        1396.125
+                    ],
+                    [
+                        376.125,
+                        1396.125
+                    ],
+                    [
+                        392.0625,
+                        1396.125
+                    ],
+                    [
+                        414.375,
+                        1396.125
+                    ],
+                    [
+                        436.6875,
+                        1399.3125
+                    ],
+                    [
+                        462.1875,
+                        1402.5
+                    ],
+                    [
+                        484.5,
+                        1405.6875
+                    ],
+                    [
+                        506.8125,
+                        1405.6875
+                    ],
+                    [
+                        525.9375,
+                        1405.6875
+                    ],
+                    [
+                        551.4375,
+                        1405.6875
+                    ],
+                    [
+                        573.75,
+                        1405.6875
+                    ],
+                    [
+                        592.875,
+                        1405.6875
+                    ],
+                    [
+                        612,
+                        1405.6875
+                    ],
+                    [
+                        631.125,
+                        1405.6875
+                    ],
+                    [
+                        650.25,
+                        1408.875
+                    ],
+                    [
+                        666.1875,
+                        1408.875
+                    ],
+                    [
+                        682.125,
+                        1408.875
+                    ],
+                    [
+                        698.0625,
+                        1408.875
+                    ],
+                    [
+                        710.8125,
+                        1412.0625
+                    ],
+                    [
+                        723.5625,
+                        1415.25
+                    ],
+                    [
+                        739.5,
+                        1418.4375
+                    ],
+                    [
+                        752.25,
+                        1418.4375
+                    ],
+                    [
+                        771.375,
+                        1421.625
+                    ],
+                    [
+                        787.3125,
+                        1424.8125
+                    ],
+                    [
+                        806.4375,
+                        1424.8125
+                    ],
+                    [
+                        825.5625,
+                        1424.8125
+                    ],
+                    [
+                        844.6875,
+                        1424.8125
+                    ],
+                    [
+                        863.8125,
+                        1424.8125
+                    ],
+                    [
+                        882.9375,
+                        1424.8125
+                    ],
+                    [
+                        898.875,
+                        1424.8125
+                    ],
+                    [
+                        918,
+                        1431.1875
+                    ],
+                    [
+                        937.125,
+                        1431.1875
+                    ],
+                    [
+                        956.25,
+                        1434.375
+                    ],
+                    [
+                        975.375,
+                        1437.5625
+                    ],
+                    [
+                        991.3125,
+                        1437.5625
+                    ],
+                    [
+                        1004.0625,
+                        1440.75
+                    ],
+                    [
+                        1016.8125,
+                        1443.9375
+                    ],
+                    [
+                        1029.5625,
+                        1447.125
+                    ],
+                    [
+                        1042.3125,
+                        1453.5
+                    ],
+                    [
+                        1058.25,
+                        1456.6875
+                    ],
+                    [
+                        1071,
+                        1459.875
+                    ],
+                    [
+                        1083.75,
+                        1463.0625
+                    ],
+                    [
+                        1096.5,
+                        1466.25
+                    ],
+                    [
+                        1106.0625,
+                        1469.4375
+                    ],
+                    [
+                        1115.625,
+                        1469.4375
+                    ],
+                    [
+                        1128.375,
+                        1472.625
+                    ],
+                    [
+                        1137.9375,
+                        1475.8125
+                    ],
+                    [
+                        1150.6875,
+                        1479
+                    ],
+                    [
+                        1163.4375,
+                        1482.1875
+                    ],
+                    [
+                        1176.1875,
+                        1485.375
+                    ],
+                    [
+                        1188.9375,
+                        1488.5625
+                    ],
+                    [
+                        1198.5,
+                        1491.75
+                    ],
+                    [
+                        1208.0625,
+                        1494.9375
+                    ],
+                    [
+                        1217.625,
+                        1494.9375
+                    ],
+                    [
+                        1227.1875,
+                        1498.125
+                    ],
+                    [
+                        1236.75,
+                        1498.125
+                    ],
+                    [
+                        1246.3125,
+                        1501.3125
+                    ],
+                    [
+                        1255.875,
+                        1504.5
+                    ],
+                    [
+                        1265.4375,
+                        1507.6875
+                    ],
+                    [
+                        1278.1875,
+                        1507.6875
+                    ],
+                    [
+                        1287.75,
+                        1507.6875
+                    ],
+                    [
+                        1297.3125,
+                        1507.6875
+                    ],
+                    [
+                        1303.6875,
+                        1510.875
+                    ],
+                    [
+                        1313.25,
+                        1510.875
+                    ],
+                    [
+                        1322.8125,
+                        1510.875
+                    ],
+                    [
+                        1329.1875,
+                        1510.875
+                    ],
+                    [
+                        1335.5625,
+                        1514.0625
+                    ],
+                    [
+                        1341.9375,
+                        1514.0625
+                    ],
+                    [
+                        1351.5,
+                        1514.0625
+                    ],
+                    [
+                        1357.875,
+                        1514.0625
+                    ],
+                    [
+                        1364.25,
+                        1514.0625
+                    ],
+                    [
+                        1370.625,
+                        1514.0625
+                    ],
+                    [
+                        1377,
+                        1514.0625
+                    ],
+                    [
+                        1386.5625,
+                        1514.0625
+                    ],
+                    [
+                        1396.125,
+                        1514.0625
+                    ],
+                    [
+                        1402.5,
+                        1514.0625
+                    ],
+                    [
+                        1408.875,
+                        1514.0625
+                    ],
+                    [
+                        1421.625,
+                        1514.0625
+                    ],
+                    [
+                        1431.1875,
+                        1514.0625
+                    ],
+                    [
+                        1440.75,
+                        1517.25
+                    ],
+                    [
+                        1453.5,
+                        1517.25
+                    ],
+                    [
+                        1466.25,
+                        1517.25
+                    ],
+                    [
+                        1475.8125,
+                        1517.25
+                    ],
+                    [
+                        1488.5625,
+                        1517.25
+                    ],
+                    [
+                        1501.3125,
+                        1517.25
+                    ],
+                    [
+                        1514.0625,
+                        1517.25
+                    ],
+                    [
+                        1526.8125,
+                        1520.4375
+                    ],
+                    [
+                        1536.375,
+                        1520.4375
+                    ],
+                    [
+                        1549.125,
+                        1523.625
+                    ],
+                    [
+                        1558.6875,
+                        1523.625
+                    ],
+                    [
+                        1571.4375,
+                        1523.625
+                    ],
+                    [
+                        1584.1875,
+                        1523.625
+                    ],
+                    [
+                        1596.9375,
+                        1523.625
+                    ],
+                    [
+                        1606.5,
+                        1523.625
+                    ],
+                    [
+                        1616.0625,
+                        1526.8125
+                    ],
+                    [
+                        1628.8125,
+                        1526.8125
+                    ],
+                    [
+                        1641.5625,
+                        1530
+                    ],
+                    [
+                        1651.125,
+                        1530
+                    ],
+                    [
+                        1663.875,
+                        1530
+                    ],
+                    [
+                        1676.625,
+                        1530
+                    ],
+                    [
+                        1689.375,
+                        1533.1875
+                    ],
+                    [
+                        1698.9375,
+                        1533.1875
+                    ],
+                    [
+                        1711.6875,
+                        1536.375
+                    ],
+                    [
+                        1721.25,
+                        1536.375
+                    ],
+                    [
+                        1730.8125,
+                        1539.5625
+                    ],
+                    [
+                        1740.375,
+                        1539.5625
+                    ],
+                    [
+                        1749.9375,
+                        1539.5625
+                    ],
+                    [
+                        1756.3125,
+                        1539.5625
+                    ],
+                    [
+                        1765.875,
+                        1539.5625
+                    ],
+                    [
+                        1772.25,
+                        1542.75
+                    ],
+                    [
+                        1778.625,
+                        1542.75
+                    ],
+                    [
+                        1788.1875,
+                        1542.75
+                    ],
+                    [
+                        1794.5625,
+                        1542.75
+                    ],
+                    [
+                        1804.125,
+                        1542.75
+                    ],
+                    [
+                        1810.5,
+                        1545.9375
+                    ],
+                    [
+                        1820.0625,
+                        1545.9375
+                    ],
+                    [
+                        1826.4375,
+                        1545.9375
+                    ],
+                    [
+                        1832.8125,
+                        1545.9375
+                    ],
+                    [
+                        1839.1875,
+                        1549.125
+                    ],
+                    [
+                        1845.5625,
+                        1549.125
+                    ],
+                    [
+                        1851.9375,
+                        1549.125
+                    ],
+                    [
+                        1861.5,
+                        1552.3125
+                    ],
+                    [
+                        1867.875,
+                        1552.3125
+                    ],
+                    [
+                        1874.25,
+                        1552.3125
+                    ],
+                    [
+                        1880.625,
+                        1552.3125
+                    ],
+                    [
+                        1887,
+                        1552.3125
+                    ],
+                    [
+                        1893.375,
+                        1552.3125
+                    ],
+                    [
+                        1896.5625,
+                        1552.3125
+                    ],
+                    [
+                        1899.75,
+                        1552.3125
+                    ],
+                    [
+                        1902.9375,
+                        1552.3125
+                    ],
+                    [
+                        1906.125,
+                        1552.3125
+                    ],
+                    [
+                        1909.3125,
+                        1552.3125
+                    ],
+                    [
+                        1915.6875,
+                        1552.3125
+                    ],
+                    [
+                        1918.875,
+                        1552.3125
+                    ],
+                    [
+                        1925.25,
+                        1552.3125
+                    ],
+                    [
+                        1931.625,
+                        1552.3125
+                    ],
+                    [
+                        1934.8125,
+                        1552.3125
+                    ],
+                    [
+                        1938,
+                        1552.3125
+                    ],
+                    [
+                        1941.1875,
+                        1552.3125
+                    ],
+                    [
+                        1944.375,
+                        1552.3125
+                    ],
+                    [
+                        1950.75,
+                        1552.3125
+                    ],
+                    [
+                        1957.125,
+                        1552.3125
+                    ],
+                    [
+                        1963.5,
+                        1552.3125
+                    ],
+                    [
+                        1973.0625,
+                        1552.3125
+                    ],
+                    [
+                        1979.4375,
+                        1552.3125
+                    ],
+                    [
+                        1989,
+                        1552.3125
+                    ],
+                    [
+                        1998.5625,
+                        1552.3125
+                    ],
+                    [
+                        2011.3125,
+                        1552.3125
+                    ],
+                    [
+                        2020.875,
+                        1552.3125
+                    ],
+                    [
+                        2030.4375,
+                        1552.3125
+                    ],
+                    [
+                        2043.1875,
+                        1552.3125
+                    ],
+                    [
+                        2055.9375,
+                        1552.3125
+                    ],
+                    [
+                        2075.0625,
+                        1552.3125
+                    ],
+                    [
+                        2116.5,
+                        1552.3125
+                    ],
+                    [
+                        2135.625,
+                        1555.5
+                    ],
+                    [
+                        2151.5625,
+                        1555.5
+                    ],
+                    [
+                        2164.3125,
+                        1555.5
+                    ],
+                    [
+                        2180.25,
+                        1558.6875
+                    ],
+                    [
+                        2199.375,
+                        1561.875
+                    ],
+                    [
+                        2221.6875,
+                        1565.0625
+                    ],
+                    [
+                        2237.625,
+                        1568.25
+                    ],
+                    [
+                        2253.5625,
+                        1571.4375
+                    ],
+                    [
+                        2269.5,
+                        1574.625
+                    ],
+                    [
+                        2282.25,
+                        1577.8125
+                    ],
+                    [
+                        2301.375,
+                        1581
+                    ],
+                    [
+                        2314.125,
+                        1584.1875
+                    ],
+                    [
+                        2330.0625,
+                        1584.1875
+                    ],
+                    [
+                        2342.8125,
+                        1587.375
+                    ],
+                    [
+                        2355.5625,
+                        1587.375
+                    ],
+                    [
+                        2368.3125,
+                        1590.5625
+                    ],
+                    [
+                        2381.0625,
+                        1590.5625
+                    ],
+                    [
+                        2393.8125,
+                        1593.75
+                    ],
+                    [
+                        2409.75,
+                        1596.9375
+                    ],
+                    [
+                        2425.6875,
+                        1596.9375
+                    ],
+                    [
+                        2441.625,
+                        1600.125
+                    ],
+                    [
+                        2457.5625,
+                        1600.125
+                    ],
+                    [
+                        2476.6875,
+                        1603.3125
+                    ],
+                    [
+                        2499,
+                        1606.5
+                    ],
+                    [
+                        2521.3125,
+                        1609.6875
+                    ],
+                    [
+                        2540.4375,
+                        1609.6875
+                    ],
+                    [
+                        2556.375,
+                        1609.6875
+                    ],
+                    [
+                        2572.3125,
+                        1612.875
+                    ],
+                    [
+                        2591.4375,
+                        1616.0625
+                    ],
+                    [
+                        2607.375,
+                        1619.25
+                    ],
+                    [
+                        2623.3125,
+                        1622.4375
+                    ],
+                    [
+                        2639.25,
+                        1622.4375
+                    ],
+                    [
+                        2652,
+                        1625.625
+                    ],
+                    [
+                        2664.75,
+                        1628.8125
+                    ],
+                    [
+                        2677.5,
+                        1628.8125
+                    ],
+                    [
+                        2687.0625,
+                        1632
+                    ],
+                    [
+                        2699.8125,
+                        1635.1875
+                    ],
+                    [
+                        2709.375,
+                        1635.1875
+                    ],
+                    [
+                        2718.9375,
+                        1635.1875
+                    ],
+                    [
+                        2728.5,
+                        1635.1875
+                    ],
+                    [
+                        2738.0625,
+                        1638.375
+                    ],
+                    [
+                        2744.4375,
+                        1638.375
+                    ],
+                    [
+                        2754,
+                        1638.375
+                    ],
+                    [
+                        2763.5625,
+                        1641.5625
+                    ],
+                    [
+                        2776.3125,
+                        1641.5625
+                    ],
+                    [
+                        2785.875,
+                        1641.5625
+                    ],
+                    [
+                        2795.4375,
+                        1641.5625
+                    ],
+                    [
+                        2805,
+                        1641.5625
+                    ],
+                    [
+                        2817.75,
+                        1644.75
+                    ],
+                    [
+                        2824.125,
+                        1644.75
+                    ],
+                    [
+                        2833.6875,
+                        1644.75
+                    ],
+                    [
+                        2843.25,
+                        1644.75
+                    ],
+                    [
+                        2852.8125,
+                        1644.75
+                    ],
+                    [
+                        2859.1875,
+                        1644.75
+                    ],
+                    [
+                        2868.75,
+                        1644.75
+                    ],
+                    [
+                        2875.125,
+                        1644.75
+                    ],
+                    [
+                        2884.6875,
+                        1644.75
+                    ],
+                    [
+                        2894.25,
+                        1644.75
+                    ],
+                    [
+                        2903.8125,
+                        1644.75
+                    ],
+                    [
+                        2913.375,
+                        1644.75
+                    ],
+                    [
+                        2926.125,
+                        1647.9375
+                    ],
+                    [
+                        2935.6875,
+                        1647.9375
+                    ],
+                    [
+                        2951.625,
+                        1647.9375
+                    ],
+                    [
+                        2964.375,
+                        1651.125
+                    ],
+                    [
+                        2977.125,
+                        1651.125
+                    ],
+                    [
+                        2989.875,
+                        1651.125
+                    ],
+                    [
+                        3002.625,
+                        1651.125
+                    ],
+                    [
+                        3015.375,
+                        1654.3125
+                    ],
+                    [
+                        3031.3125,
+                        1654.3125
+                    ],
+                    [
+                        3044.0625,
+                        1657.5
+                    ],
+                    [
+                        3060,
+                        1657.5
+                    ],
+                    [
+                        3072.75,
+                        1660.6875
+                    ],
+                    [
+                        3088.6875,
+                        1663.875
+                    ],
+                    [
+                        3104.625,
+                        1663.875
+                    ],
+                    [
+                        3120.5625,
+                        1667.0625
+                    ],
+                    [
+                        3136.5,
+                        1670.25
+                    ],
+                    [
+                        3152.4375,
+                        1670.25
+                    ],
+                    [
+                        3165.1875,
+                        1670.25
+                    ],
+                    [
+                        3174.75,
+                        1670.25
+                    ],
+                    [
+                        3177.9375,
+                        1670.25
+                    ],
+                    [
+                        3181.125,
+                        1673.4375
+                    ],
+                    [
+                        3174.75,
+                        1673.4375
+                    ]
+                ]
+            },
+            "properties": {
+                "date": "2019-09-26T23:04:08.000Z",
+                "lng": -110.869252,
+                "image_basemap": 15695388030770,
+                "name": "Gentile Wash 5",
+                "time": "2019-09-26T23:04:08.000Z",
+                "id": 15695390488508,
+                "lat": 39.712107,
+                "modified_timestamp": 1569539048851,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15695390488508"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.847628,
+                    40.766664
+                ]
+            },
+            "properties": {
+                "date": "2019-09-28T15:55:02.000Z",
+                "sed": {
+                    "lithologies": {
+                        "interval_thickness": 3,
+                        "thickness_units": "m",
+                        "is_this_a_bed_or_package": "bed",
+                        "primary_lithology": "siliciclastic",
+                        "principal_siliciclastic_type": "siltstone",
+                        "mud_silt_principal_grain_size": "silt"
+                    },
+                    "structures": {
+                        "limestone_structures": true
+                    }
+                },
+                "name": "Test",
+                "time": "2019-09-28T15:55:02.000Z",
+                "id": 15696861026451,
+                "modified_timestamp": 1569688016578,
+                "self": "https:\/\/strabospot.org\/db\/feature\/15696861026451"
+            },
+            "type": "Feature"
+        }
+    ]
+}
+

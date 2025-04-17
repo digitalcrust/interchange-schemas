@@ -1,0 +1,221 @@
+{
+  "checkin_id": 26692,
+  "person_id": 1865,
+  "first_name": "Charlie",
+  "last_name": "Smith",
+  "notes": "Number hill - Mississippian carbonate strata",
+  "rating": 4,
+  "lng": -113.302458592439,
+  "lat": 43.6479437702815,
+  "near": "Arco, ID",
+  "created": "October 19, 2023",
+  "added": "January 13, 2024",
+  "photo": 54284,
+  "likes": "1",
+  "comments": 1,
+  "liked": false,
+  "status": 1,
+  "observations": [
+    {
+      "obs_id": 44348,
+      "photo": 54286,
+      "lng": null,
+      "lat": null,
+      "orientation": {
+        "strike": null,
+        "strikestd": null,
+        "dip": null,
+        "dipstd": null,
+        "dip_dir": null,
+        "trend": null,
+        "trendstd": null,
+        "plunge": null,
+        "plungestd": null,
+        "feature": {
+          "structure_id": 9,
+          "name": "anticline",
+          "structure_type": "fold",
+          "group": "",
+          "class": "structure"
+        },
+        "notes": ""
+      },
+      "rocks": {
+        "strat_name": {
+          "strat_name_long": "Surrett Canyon Formation",
+          "strat_name_id": 73843,
+          "strat_name": "Surrett Canyon",
+          "b_age": "335.0000",
+          "b_period": "Carboniferous",
+          "t_age": "315.0000",
+          "t_period": "Carboniferous",
+          "parent": ""
+        },
+        "map_unit": {},
+        "liths": [
+          {
+            "lith_id": 30,
+            "name": "limestone",
+            "type": "carbonate",
+            "class": "sedimentary",
+            "color": "#4C71F1"
+          }
+        ],
+        "interval": {
+          "int_id": 90,
+          "name": "Mississippian",
+          "abbrev": null,
+          "t_age": 323.2,
+          "b_age": 358.9,
+          "int_type": "epoch",
+          "timescales": [
+            {
+              "timescale_id": 11,
+              "name": "international intervals"
+            }
+          ],
+          "color": "#678F66"
+        },
+        "notes": "deformed carbonate strata. anticline in the lower left part and near vertical bedding near summit"
+      },
+      "fossils": {},
+      "minerals": {},
+      "comments": 0,
+      "age_est": {
+        "int_id": 84,
+        "name": "Carboniferous",
+        "color": "#67A599",
+        "b_age": 335,
+        "t_age": 315
+      }
+    },
+    {
+      "obs_id": 44347,
+      "photo": 54285,
+      "lng": null,
+      "lat": null,
+      "orientation": {},
+      "rocks": {
+        "strat_name": {
+          "strat_name_long": "Surrett Canyon Formation",
+          "strat_name_id": 73843,
+          "strat_name": "Surrett Canyon",
+          "b_age": "335.0000",
+          "b_period": "Carboniferous",
+          "t_age": "315.0000",
+          "t_period": "Carboniferous",
+          "parent": ""
+        },
+        "map_unit": {},
+        "liths": [
+          {
+            "lith_id": 30,
+            "name": "limestone",
+            "type": "carbonate",
+            "class": "sedimentary",
+            "color": "#4C71F1"
+          }
+        ],
+        "interval": {
+          "int_id": 90,
+          "name": "Mississippian",
+          "abbrev": null,
+          "t_age": 323.2,
+          "b_age": 358.9,
+          "int_type": "epoch",
+          "timescales": [
+            {
+              "timescale_id": 11,
+              "name": "international intervals"
+            }
+          ],
+          "color": "#678F66"
+        },
+        "notes": ""
+      },
+      "fossils": {},
+      "minerals": {},
+      "comments": 0,
+      "age_est": {
+        "int_id": 84,
+        "name": "Carboniferous",
+        "color": "#67A599",
+        "b_age": 335,
+        "t_age": 315
+      }
+    },
+    {
+      "obs_id": 44349,
+      "photo": 54287,
+      "lng": null,
+      "lat": null,
+      "orientation": {},
+      "rocks": {
+        "strat_name": {
+          "strat_name_long": "Surrett Canyon Formation",
+          "strat_name_id": 73843,
+          "strat_name": "Surrett Canyon",
+          "b_age": "335.0000",
+          "b_period": "Carboniferous",
+          "t_age": "315.0000",
+          "t_period": "Carboniferous",
+          "parent": ""
+        },
+        "map_unit": {},
+        "liths": [
+          {
+            "lith_id": 30,
+            "name": "limestone",
+            "type": "carbonate",
+            "class": "sedimentary",
+            "color": "#4C71F1"
+          }
+        ],
+        "interval": {
+          "int_id": 90,
+          "name": "Mississippian",
+          "abbrev": null,
+          "t_age": 323.2,
+          "b_age": 358.9,
+          "int_type": "epoch",
+          "timescales": [
+            {
+              "timescale_id": 11,
+              "name": "international intervals"
+            }
+          ],
+          "color": "#678F66"
+        },
+        "notes": "numbers represent high school graduating classes"
+      },
+      "fossils": {},
+      "minerals": {},
+      "comments": 0,
+      "age_est": {
+        "int_id": 84,
+        "name": "Carboniferous",
+        "color": "#67A599",
+        "b_age": 335,
+        "t_age": 315
+      }
+    }
+  ],
+  "xp": {
+    "checkin": 100,
+    "photos": 400,
+    "rocks": 220,
+    "taxa": 0,
+    "orientation": 20,
+    "minerals": 0,
+    "other": 0,
+    "bonus": 0,
+    "total": 740
+  },
+  "stats": [
+    {
+      "abr": "C",
+      "color": "#67A599",
+      "count": 1
+    }
+  ]
+}
