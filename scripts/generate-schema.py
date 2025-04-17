@@ -6,9 +6,8 @@ Usage: python scripts/generate-schema.py
 from json import dumps
 import erdantic as erd
 from pathlib import Path
-import sys
 
-from field_site_schemas import FieldSite
+from digitalcrust.interchange_schemas import FieldSite
 
 __root__ = Path(__file__).parent.parent
 

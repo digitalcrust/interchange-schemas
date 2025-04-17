@@ -1,7 +1,7 @@
 [project]
-name = "field_site_schemas"
+name = "digitalcrust.interchange-schemas"
 version = "0.1.0"
-description = "A shared schema for field sites"
+description = "Interchange schemas for field sites between Macrostrat and StraboSpot"
 authors = [
     {name = "Daven Quinn",email = "code@davenquinn.com"}
 ]
@@ -15,6 +15,10 @@ dependencies = [
 ]
 
 [tool.poetry]
+
+packages = [
+    {include = "digitalcrust"}
+]
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.11.5"
