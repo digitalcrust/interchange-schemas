@@ -136,6 +136,36 @@
         "title": "FieldSite",
         "type": "object"
       },
+      "Fossil": {
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "integer"
+          },
+          "description": {
+            "title": "Description",
+            "type": "string"
+          },
+          "taxa": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Taxa"
+          }
+        },
+        "required": [
+          "id",
+          "description"
+        ],
+        "title": "Fossil",
+        "type": "object"
+      },
       "GeologicAgeInterval": {
         "properties": {
           "id": {
@@ -476,6 +506,9 @@
               },
               {
                 "$ref": "#/$defs/Lithology"
+              },
+              {
+                "$ref": "#/$defs/Fossil"
               }
             ],
             "title": "Data"

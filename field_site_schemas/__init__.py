@@ -90,7 +90,11 @@ class RockUnit(IdentifiedModel):
     age: Optional[GeologicAgeInterval] = None
     entity: Optional[LithodemeName] = None
 
-AnyData = Orientation | Photo | RockUnit | Texture | Lithology
+class Fossil(IdentifiedModel):
+    description: str
+    taxa: Optional[str] = None
+
+AnyData = Orientation | Photo | RockUnit | Texture | Lithology | Fossil
 
 class Observation(BaseModel):
     notes: Optional[str] = None
