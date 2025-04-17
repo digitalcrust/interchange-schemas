@@ -1,4 +1,4 @@
-# Data interoperability schemas
+# Data interchange schemas
 
 This repository contains the description of a data format designed for
 interoperability between storage formats for geological field site
@@ -6,7 +6,7 @@ data.
 
 ## Field sites
 
-The **Field Sites** data model supports conversion between [Rockd](https://rockd.org)
+The **Field Sites** data models support conversion between [Rockd](https://rockd.org)
 "checkins" and [StraboSpot](https://strabospot.org) "spots." Both of these data
 platforms represent geological field site information with photos, notes,
 structural measurements and other metadata (often linked to data dictionaries).
