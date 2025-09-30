@@ -1,0 +1,104 @@
+=== FieldSite (from Checkin) ===
+{
+  "id": 26692,
+  "name": null,
+  "location": {
+    "latitude": 43.6479437702815,
+    "longitude": -113.302458592439,
+    "elevation": null,
+    "radius": null,
+    "description": null,
+    "closest_place": null,
+    "gps_accuracy": null
+  },
+  "created": "2023-10-19 00:00:00+00:00",
+  "updated": "2024-01-13 00:00:00+00:00",
+  "observations": [],
+  "samples": [],
+  "photos": [
+    {
+      "id": 54284,
+      "url": "rockd://photo/54284",
+      "width": 0,
+      "height": 0,
+      "checksum": ""
+    }
+  ],
+  "notes": "Number hill - Mississippian carbonate strata",
+  "social": null,
+  "children": null,
+  "contributors": null
+}
+
+=== Spot FeatureCollection (from FieldSite) ===
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.302458592439,
+          43.6479437702815
+        ]
+      },
+      "properties": {
+        "id": 26692,
+        "notes": "Number hill - Mississippian carbonate strata",
+        "time": "2023-10-19T00:00:00+00:00",
+        "lat": 43.6479437702815,
+        "lng": -113.302458592439,
+        "images": [
+          {
+            "id": 54284
+          }
+        ]
+      }
+    }
+  ]
+}
+
+
+=== FieldSite (from Spot) ===
+{
+  "id": 16529992313378,
+  "name": null,
+  "location": {
+    "latitude": 38.576911,
+    "longitude": -97.679878,
+    "elevation": null,
+    "radius": null,
+    "description": null,
+    "closest_place": null,
+    "gps_accuracy": null
+  },
+  "created": "2022-06-19 22:27:11+00:00",
+  "updated": "2022-08-10 16:29:39.966000+00:00",
+  "observations": [],
+  "samples": [],
+  "photos": [
+    {
+      "id": 16530015128805,
+      "url": "rockd://photo/16530015128805",
+      "width": 4032,
+      "height": 3024,
+      "checksum": ""
+    }
+  ],
+  "notes": "Spot notes here",
+  "social": null,
+  "children": null,
+  "contributors": null
+}
+
+=== Checkin (from FieldSite) ===
+{
+  "checkin_id": 16529992313378,
+  "notes": "Spot notes here",
+  "lat": 38.576911,
+  "lng": -97.679878,
+  "created": "2022-06-19T22:27:11+00:00",
+  "photo": 16530015128805
+}
+
