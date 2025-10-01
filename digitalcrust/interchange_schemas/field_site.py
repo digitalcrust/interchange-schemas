@@ -38,7 +38,7 @@ class BeddingFacing(Enum):
 class PlanarOrientation(BaseModel):
     strike: float
     dip: float
-    facing: BeddingFacing = "upright"
+    facing: BeddingFacing = BeddingFacing.upright
     notes: Optional[str] = None
     associated: list["Orientation"] = []
 

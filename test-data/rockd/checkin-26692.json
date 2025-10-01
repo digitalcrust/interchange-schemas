@@ -22,9 +22,9 @@
       "lng": null,
       "lat": null,
       "orientation": {
-        "strike": null,
+        "strike": 123,
         "strikestd": null,
-        "dip": null,
+        "dip": 35,
         "dipstd": null,
         "dip_dir": null,
         "trend": null,

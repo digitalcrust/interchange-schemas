@@ -1,5 +1,5 @@
 from datetime import datetime, timezone
-from field_site import FieldSite, Location, Photo
+from .field_site import FieldSite, Location, Photo, PlanarOrientation, Observation, BeddingFacing
 from typing import Optional
 import json, sys
 
@@ -27,6 +27,14 @@ def _parse_date_time(x: Optional[str]) -> Optional[datetime]:
         except Exception:
             return None
 
+def _to_float(v) -> Optional[float]:
+    try:
+        if v is None:
+            return None
+        return float(v)
+    except Exception:
+        return None
+
 #normalize and require lat/lngs
 def _valid_coords(lat, lng) -> bool:
     try:
@@ -36,7 +44,43 @@ def _valid_coords(lat, lng) -> bool:
         return False
     return -90.0 <= lat <= 90.0 and -180.0 <= lng <= 180.0
 
+def _first_planar_from_spot(props) -> Optional[PlanarOrientation]:
+    """Find first planar orientation with numeric strike & dip in StraboSpot props."""
+    orientation = props.get("orientation_data")
+    if not isinstance(orientation, list):
+        return None
+    for item in orientation:
+        if not isinstance(item, dict):
+            continue
+        if item.get("type") == "planar_orientation":
+            strike = _to_float(item.get("strike"))
+            dip = _to_float(item.get("dip"))
+            if strike is not None and dip is not None:
+                return PlanarOrientation(strike=strike, dip=dip, facing=BeddingFacing.upright)
+    return None
 
+def _first_planar_from_checkin(checkin) -> Optional[PlanarOrientation]:
+    """Find first observation with numeric strike & dip in Rockd checkin."""
+    obs = checkin.get("observations")
+    if not isinstance(obs, list):
+        return None
+    for o in obs:
+        if not isinstance(o, dict):
+            continue
+        orientation = o.get("orientation") or {}
+        strike = _to_float(orientation.get("strike"))
+        dip = _to_float(orientation.get("dip"))
+        if strike is not None and dip is not None:
+            return PlanarOrientation(strike=strike, dip=dip, facing=BeddingFacing.upright)
+    return None
+
+def _first_planar_from_fieldsite(fs: FieldSite) -> Optional[PlanarOrientation]:
+    """Return first PlanarOrientation in FieldSite.observations."""
+    for ob in fs.observations or []:
+        data = getattr(ob, "data", None)
+        if isinstance(data, PlanarOrientation):
+            return data
+    return None
 
 #------------Single spot to FieldSite---------------
 def spot_to_fieldsite(feat) -> FieldSite:
@@ -72,10 +116,12 @@ def spot_to_fieldsite(feat) -> FieldSite:
                     checksum=""
                 )
             )
-
+    observations: list[Observation] = []
+    planar = _first_planar_from_spot(props)
+    if planar:
+        observations.append(Observation(data=planar))
     created = _parse_date_time(props.get("time") or props.get("date")) or datetime.now(timezone.utc)
 
-    # robust modified_timestamp parsing  // added
     mt = props.get("modified_timestamp")
     if mt is not None:
         try:
@@ -92,12 +138,15 @@ def spot_to_fieldsite(feat) -> FieldSite:
         updated=updated,
         notes=props.get("notes"),
         photos=photos,
+        observations=observations,
+
     )
 
 #------------Multiple spots to list[FieldSite]---------------
 def multiple_spots_to_fieldsites(multiple_spots) -> list[FieldSite]:
     assert multiple_spots.get("type") == "FeatureCollection"
     out: list[FieldSite] = []
+
     for f in multiple_spots.get("features", []):
         props = f.get("properties", {}) or {}
         geom = f.get("geometry", {}) or {}
@@ -123,7 +172,7 @@ def multiple_spots_to_fieldsites(multiple_spots) -> list[FieldSite]:
 
 #------------Single checkin to FieldSite---------------
 def checkin_to_fieldsite(checkin) -> FieldSite:
-    cid = checkin.get("checkin_id")  # // added: enforce id presence
+    cid = checkin.get("checkin_id")
     if cid is None:
         raise ValueError("Missing checkin_id")
 
@@ -143,7 +192,10 @@ def checkin_to_fieldsite(checkin) -> FieldSite:
                 checksum=""
             )
         )
-
+    observations: list[Observation] = []
+    planar = _first_planar_from_checkin(checkin)
+    if planar:
+        observations.append(Observation(data=planar))
     created = _parse_date_time(checkin.get("created")) or datetime.now(timezone.utc)
     updated = _parse_date_time(checkin.get("added")) or created
 
@@ -154,6 +206,7 @@ def checkin_to_fieldsite(checkin) -> FieldSite:
         updated=updated,
         notes=checkin.get("notes"),
         photos=photos,
+        observations=observations,
     )
 
 
@@ -162,7 +215,7 @@ def checkin_to_fieldsite(checkin) -> FieldSite:
 
 
 
-# ---- FieldSite spot ----
+# ---- FieldSite to spot ----
 def fieldsite_to_spot(fs: FieldSite) -> dict:
     feat = {
         "type": "Feature",
@@ -177,6 +230,14 @@ def fieldsite_to_spot(fs: FieldSite) -> dict:
     }
     if fs.photos:
         feat["properties"]["images"] = [{"id": fs.photos[0].id}]
+
+    planar = _first_planar_from_fieldsite(fs)
+    if planar:
+        feat["properties"]["orientation_data"] = [{
+            "type": "planar_orientation",
+            "strike": float(planar.strike),
+            "dip": float(planar.dip)
+        }]
     return {"type": "FeatureCollection", "features": [feat]}
 
 def fieldsite_to_checkin(fs: FieldSite) -> dict:
@@ -189,11 +250,15 @@ def fieldsite_to_checkin(fs: FieldSite) -> dict:
     }
     if fs.photos:
         d["photo"] = fs.photos[0].id
+    planar = _first_planar_from_fieldsite(fs)
+    if planar:
+        d["observations"] = [{"orientation": {"strike": float(planar.strike), "dip": float(planar.dip)}}]
+
     return d
 
 
 
-
+'''
 if __name__ == "__main__":
     def dump(o):
         try:
@@ -204,14 +269,14 @@ if __name__ == "__main__":
             except Exception:
                 print(json.dumps(o, default=str, indent=2))
 
-    if len(sys.argv) != 3 or sys.argv[1] not in ("spot2fs","checkin2fs","to-spot","to-checkin"):
-        sys.exit("usage: python converter.py {spot2fs|checkin2fs|to-spot|to-checkin} path/to/input.json")
+    if len(sys.argv) != 3 or sys.argv[1] not in ("spot2checkin","checkin2spot","to-spot","to-checkin"):
+        sys.exit("usage: python converter.py {spot2checkin|checkin2spot|to-spot|to-checkin} path/to/input.json")
 
     mode, path = sys.argv[1], sys.argv[2]
     with open(path) as f:
         data = json.load(f)
 
-    if mode == "spot2fs":
+    if mode == "spot2checkin":
         # 1) FeatureCollection -> FieldSite (first convertible)
         fs_list = multiple_spots_to_fieldsites(data)
         if not fs_list:
@@ -225,7 +290,7 @@ if __name__ == "__main__":
         print("\n=== Checkin (from FieldSite) ===")
         dump(chk)
 
-    elif mode == "checkin2fs":
+    elif mode == "checkin2spot":
         # 1) Checkin -> FieldSite
         fs = checkin_to_fieldsite(data)
         print("\n=== FieldSite (from Checkin) ===")
@@ -237,7 +302,6 @@ if __name__ == "__main__":
         dump(spot_fc)
 
     else:
-        # one-shot emitters for a provided FieldSite JSON
         fs = FieldSite(**data)
         if mode == "to-spot":
             print("\n=== Spot FeatureCollection (from FieldSite) ===")
@@ -245,3 +309,4 @@ if __name__ == "__main__":
         else:
             print("\n=== Checkin (from FieldSite) ===")
             dump(fieldsite_to_checkin(fs))
+'''
