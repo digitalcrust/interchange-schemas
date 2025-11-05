@@ -53,7 +53,7 @@ def checkin_json(request):
 
 
 
-
+#endpoint to transform any data into a fieldsite response, or spot  to get a checkin response.
 
 # Spot -> FieldSite
 def test_spot_to_fieldsite_to_checkin(spot_json):
